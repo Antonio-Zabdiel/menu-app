@@ -1,5 +1,5 @@
 import { Text, StyleSheet, View } from "react-native";
-{/*import { Mapa } from "../components/Mapa";*/}
+import { Mapa } from "../components/Mapa";
 
 export function Acercade() {
   return (
@@ -20,7 +20,7 @@ export function Acercade() {
         Mapa:
       </Text></View>
       <View>
-        {/*<Mapa></Mapa>*/}
+        <Mapa></Mapa>
       </View>
 
     </View>

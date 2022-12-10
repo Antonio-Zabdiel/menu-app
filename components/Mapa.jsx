@@ -1,21 +1,29 @@
-{/*import { Text, StyleSheet, View } from "react-native" */}
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Text, StyleSheet, View } from "react-native";
+import MapView from 'react-native-maps'
 
-
-const position = [51.505, -0.09]
-    
 export function Mapa() {
     return(
-        <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        <View>
+            <MapView 
+                style={styles.map}
+                initialRegion={{
+                    /*17.196160946616754, -108.3930000571495 */
+                    latitude: 17.196160946616754,
+                    longitude: -108.3930000571495,
+                    /*24.474774410434552, -96.17286459995714*/
+                    latitudeDelta: 7.278613464,
+                    longitudeDelta: 12.22013546,
+                }}
             />
-            <Marker position={position}>
-            <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-            </Marker>
-        </MapContainer>
+            <Text>
+                {"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+            </Text>
+        </View> 
     )
 }
+
+const styles = StyleSheet.create({
+    map: {
+        ...StyleSheet.absoluteFillObject,
+    },
+  });
