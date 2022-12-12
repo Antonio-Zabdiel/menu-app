@@ -14,7 +14,7 @@ export function Mapa() {
                 style={styles.map}
                 initialRegion={{
                     /*16.1522549017148, -110.31000493226249*/
-                    latitude: 10.432899319086438, 
+                    latitude: -32.432899319086438, 
                     longitude: -99.1332274758037,
                     /*24.474774410434552, -96.17286459995714*/
                     latitudeDelta: 10.817894458495692,
